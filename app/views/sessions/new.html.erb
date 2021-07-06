@@ -14,7 +14,7 @@
         <div class="field">
           <%= f.label :username, "Username" %>
           <div class="ui left icon input">
-            <input type="text" placeholder="Username">
+            <%= f.text_field :username, placeholder: "Username" %>
             <i class="user icon"></i>
           </div>
         </div>
@@ -27,7 +27,6 @@
         </div>
         <%= f.button "Login", class: "ui orange submit button" %>
       <% end %>
-      </div>
     </div>
     <div class="middle aligned column">
       <div class="ui orange big button">

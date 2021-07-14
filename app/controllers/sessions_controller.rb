@@ -23,7 +23,7 @@ class SessionsController < ApplicationController
   end
 
   private
-
+  # Enforce login access prevention once logged in ..line 2
   def logged_in_redirect
     if logged_in?
       flash[:error] = "You are already logged in"
